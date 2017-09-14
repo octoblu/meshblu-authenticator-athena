@@ -42,9 +42,7 @@ class Server
     }
 
     router = new Router {
-      authenticatorController,
-      adminUsername: @env.ADMIN_USERNAME
-      adminPassword: @env.ADMIN_PASSWORD
+      authenticatorController
     }
 
     router.route app

@@ -20,8 +20,6 @@ describe 'Server', ->
         REDIRECT_URL: '...'
         CLIENT_ID: '...'
         CLIENT_SECRET: '...'
-        ADMIN_PASSWORD: '...'
-        ADMIN_USERNAME: '...'
     }
 
     @sut.run (@error) => done()

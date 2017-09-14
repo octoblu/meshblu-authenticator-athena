@@ -15,8 +15,6 @@ envConfig = {
   REDIRECT_URL             : envalid.url()
   CLIENT_ID                : envalid.str()
   CLIENT_SECRET            : envalid.str()
-  ADMIN_USERNAME           : envalid.str()
-  ADMIN_PASSWORD           : envalid.str()
 }
 
 class Command

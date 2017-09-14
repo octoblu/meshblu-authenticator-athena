@@ -1,10 +1,8 @@
 basicAuth = require 'basic-auth-connect'
 
 class Router
-  constructor: ({ @authenticatorController, @adminUsername, @adminPassword }) ->
+  constructor: ({ @authenticatorController }) ->
     throw new Error 'Router: requires authenticatorController' unless @authenticatorController?
-    throw new Error 'Router: requires adminUsername' unless @adminUsername?
-    throw new Error 'Router: requires adminPassword' unless @adminPassword?
 
   route: (app) =>
     app.get '/authenticate', @authenticatorController.authenticate

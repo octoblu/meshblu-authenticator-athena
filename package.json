@@ -1,0 +1,71 @@
+{
+  "name": "meshblu-authenticator-athena",
+  "version": "1.0.0",
+  "description": "meshblu-authenticator-athena an Octoblu Service",
+  "keywords": [
+    "Octoblu",
+    "Service"
+  ],
+  "homepage": "https://github.com/octoblu/meshblu-authenticator-athena",
+  "bugs": "https://github.com/octoblu/meshblu-authenticator-athena/issues",
+  "author": {
+    "name": "Octoblu",
+    "url": "https://github.com/octoblu"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/octoblu/meshblu-authenticator-athena.git"
+  },
+  "scripts": {
+    "start": "node command.js",
+    "test": "mocha",
+    "coverage": "nyc npm test",
+    "mocha:json": "mocha --reporter json > coverage/mocha.json",
+    "test:watch": "mocha -w -R mocha-multi --reporter-options spec=-,mocha-osx-reporter=-",
+    "test:athena": "node test-athena.js"
+  },
+  "devDependencies": {
+    "@octoblu/shmock": "^0.9.1",
+    "chai": "^3.5.0",
+    "chai-subset": "^1.5.0",
+    "env-test": "^1.0.0",
+    "mocha": "^3.3.0",
+    "mocha-multi": "^0.11.0",
+    "mocha-osx-reporter": "^0.1.2",
+    "nyc": "^10.3.2",
+    "sinon": "^2.2.0",
+    "sinon-chai": "^2.10.0"
+  },
+  "dependencies": {
+    "basic-auth-connect": "^1.0.0",
+    "coffee-script": "^1.12.5",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.1",
+    "debug": "^2.6.6",
+    "envalid": "^3.0.0",
+    "express-octoblu": "^3.0.1",
+    "jsonwebtoken": "^7.4.0",
+    "lodash": "^4.15.0",
+    "meshblu-authenticator-core": "^4.1.1",
+    "meshblu-config": "^7.0.0",
+    "meshblu-http": "^9.9.0",
+    "moment": "^2.18.1",
+    "request": "^2.81.0",
+    "server-destroy": "^1.0.1",
+    "sigterm-handler": "^2.0.0",
+    "validator": "^7.2.0"
+  },
+  "license": "MIT",
+  "nyc": {
+    "cache": true,
+    "reporter": [
+      "text-summary",
+      "lcov",
+      "json"
+    ],
+    "extension": [
+      ".coffee"
+    ]
+  }
+}

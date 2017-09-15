@@ -14,7 +14,7 @@ class Server
     { @logFn, @disableLogging, @port } = options
     { @meshbluConfig, @env, @privateKey } = options
     console.log 'server:constructor:options', options
-    console.log 'server:constructor:meshbluConfig', meshbluConfig
+    console.log 'server:constructor:meshbluConfig', @meshbluConfig
     throw new Error 'Server: requires meshbluConfig' unless @meshbluConfig?
     throw new Error 'Server: requires env' unless @env?
     throw new Error 'Server: requires privateKey' unless @privateKey?

@@ -7,8 +7,8 @@ DEFAULT_PASSWORD        = 'no-need-for-this'
 
 class AuthenticatorService
   constructor: ({ meshbluConfig, privateKey, @athenaService }) ->
-    debug 'AuthService:constructor:meshbluConfig', meshbluConfig
-    debug 'AuthService:constructor:privateKey', privateKey
+    console.log 'AuthService:constructor:meshbluConfig', meshbluConfig
+    console.log 'AuthService:constructor:privateKey', privateKey
     throw new Error 'AuthenticatorService: requires meshbluConfig' unless meshbluConfig?
     throw new Error 'AuthenticatorService: requires privateKey' unless privateKey?
     throw new Error 'AuthenticatorService: requires athenaService' unless @athenaService?

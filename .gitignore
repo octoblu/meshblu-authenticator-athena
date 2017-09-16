@@ -31,3 +31,4 @@ dpl_*
 .nyc_ouput
 .env
 some.txt
+sanity.coffee

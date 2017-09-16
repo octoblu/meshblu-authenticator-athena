@@ -1,6 +1,6 @@
 {
   "name": "meshblu-authenticator-athena",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "meshblu-authenticator-athena an Octoblu Service",
   "keywords": [
     "Octoblu",
@@ -48,8 +48,8 @@
     "jsonwebtoken": "^7.4.0",
     "lodash": "^4.15.0",
     "meshblu-authenticator-core": "^4.1.1",
-    "meshblu-config": "^7.0.0",
-    "meshblu-http": "^9.9.0",
+    "meshblu-config": "^9.0.2",
+    "meshblu-http": "^10.2.0",
     "moment": "^2.18.1",
     "request": "^2.81.0",
     "server-destroy": "^1.0.1",

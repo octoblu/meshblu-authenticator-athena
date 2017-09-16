@@ -21,7 +21,7 @@ class Command
   constructor: ->
     env = envalid.cleanEnv process.env, envConfig
     @serverOptions = {
-      meshbluConfig : new MeshbluConfig().toJSON()
+      meshbluConfig : new MeshbluConfig()
       port          : env.PORT
       privateKey    : env.AUTHENTICATOR_PRIVATE_KEY
       env           : env

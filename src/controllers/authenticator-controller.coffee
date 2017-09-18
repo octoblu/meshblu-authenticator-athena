@@ -8,7 +8,7 @@ class AuthenticatorController
     throw new Error 'AuthenticatorController: athenaService' unless @athenaService?
 
   authenticate: (request, response) =>
-    { callbackUrl } = request.query
+    { callbackUrl, domain } = request.query
     unless domain?
       error = new Error 'Missing domain in query string'
       error.code = 422

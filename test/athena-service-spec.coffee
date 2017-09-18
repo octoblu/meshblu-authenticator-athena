@@ -39,7 +39,7 @@ describe 'AthenaService', ->
             scope: 'openid email profile ctx_principal_aliases'
             response_type: 'code'
             redirect_uri: 'http://example.com/authenticate/callback'
-            acr_values: 'tenant:test-octo-space product:smartspaces'
+            acr_values: 'tenant:test-octo-space product:octoblu'
             credential_type: 'client'
         }
 

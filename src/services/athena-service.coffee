@@ -30,7 +30,7 @@ class AthenaService
     if domain?
       acr_values = []
       acr_values.push "tenant:#{_.kebabCase(domain)}"
-      acr_values.push "product:smartspaces"
+      acr_values.push "product:octoblu"
       options.query.acr_values = _.join(acr_values, ' ')
       options.query.credential_type = 'client'
     return @athenaRequestService.formatUrl options

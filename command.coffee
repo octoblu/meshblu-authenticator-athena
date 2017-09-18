@@ -20,8 +20,10 @@ envConfig = {
 class Command
   constructor: ->
     env = envalid.cleanEnv process.env, envConfig
+    meshbluConfig = new MeshbluConfig()
+    meshbluConfig.loadEnv()
     @serverOptions = {
-      meshbluConfig : new MeshbluConfig()
+      meshbluConfig : meshbluConfig.get()
       port          : env.PORT
       privateKey    : env.AUTHENTICATOR_PRIVATE_KEY
       env           : env
